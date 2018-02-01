@@ -1,24 +1,27 @@
 body {
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(152, 156, 157);
+    
+    background-image: url("../images/dust.png");
+    color: #777777;
+    clear: both;
 }
 h1 {
-    color: teal;
+    color: #4aaaa5;
     font-size: 30px;
-    font-family: sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 h2 {
-    color: teal;
+    color: #4aaaa5;
     font-size: 20px;
-    font-family: sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 p {
     line-height: 18px;
 }
 .header {
-    background: white;
-    border-bottom: 1px solid grey;
+    background: #ffffff;
+    border-bottom: 1px solid #cccccc;
     width: 100%;
     height: 35px;
     padding: 20px;
@@ -68,14 +71,18 @@ p {
 .section {
     max-width: 960px;
     width: 100%;
+    margin-bottom: 150px;
     clear: both;
-    position: fixed;
+    position: relative;
     left: 30px;
+    padding: 8px;
+    overflow: auto;
 }
 .main {
     float: left;
     width: 60%;
     max-width: 650px;
+    min-width: 450px;
     padding: 20px;
     margin-left: 10px;
     background-color: white;
@@ -83,6 +90,35 @@ p {
 .float {
     float: left;
     margin-right: 10px;
+}
+.wrapper {
+    width: 100%;
+}
+.portfolio {
+    clear: both;
+}
+.pimage {
+    position: relative;
+    max-height: 250px;
+    max-width: 250px;
+    width: 45%;
+    margin: 2% 3% 3% 3%;
+    float: left;
+}
+.pimage img{
+    width: 100%;
+}
+.ptext {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    background-color: teal;
+    padding: 15px;
+}
+.ptext h3{
+    color: white;
+    text-align: center;
 }
 .connect {
     float: left;
@@ -97,12 +133,13 @@ p {
 .social {
     float: left;
     display: inline-block;
+    text-decoration: none;
 }
 .clearfix {
     clear: both;
   }
 .footer {
-    background-color: rgb(50, 46, 46);
+    background-color: #666666;
     border-top: 4px solid teal;
     text-align: center;
     width: 100%;
